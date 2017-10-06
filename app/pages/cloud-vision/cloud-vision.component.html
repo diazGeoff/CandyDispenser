@@ -1,0 +1,13 @@
+<StackLayout>
+    <AbsoluteLayout width="100%" height="100%" *ngIf="isWaiting">
+        <Label text=" " class="translucent-background" [isUserInteractionEnabled]="false"></Label>
+        <StackLayout width="100%" height="100%" horizontalAlignment="center" verticalAlignment="middle">
+            <ActivityIndicator busy="true"></ActivityIndicator>
+        </StackLayout>
+    </AbsoluteLayout>
+
+    <Image [src]="imageSource" width="90%" height="80%"></Image>
+    <!-- <Label *ngIf="!candyStatus" text="You are not smiling" textWrap="true"></Label>
+    <Label *ngIf="!candyStatus" text="No candy for you" textWrap="true"></Label> -->
+    <Button text="Capture Photo" (tap)="capturePicture()"></Button>
+</StackLayout>

@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "__PACKAGE__" 
+    applicationId = "com.xerkit.CandyDispenser10062017" 
     
     //override supported platforms
     // ndk {
